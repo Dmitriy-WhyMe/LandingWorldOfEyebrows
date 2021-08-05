@@ -1,0 +1,391 @@
+// main page elements
+body
+	font-size: 14px
+	color: $main
+	font-family: 'Gotham Pro', sans-serif
+	font-weight: 500
+	background: white
+	overflow-x: hidden
+	// +scrollbar(10px, auto, $yellow, $gray2, $dark, null)
+
+.page-container
+	max-width: 1920px
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
+
+.container
+	max-width: 980px
+	width: 100%
+	padding: 0
+	margin: 0 auto
+	+mq($max-width: 980px)
+		padding: 0 15px
+		max-width: 100%
+	+mq($max-width: 575px)
+		padding: 0 10px
+
+.flex
+	display: flex
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	color: white
+	background: $red
+	border-radius: 17px
+	width: 100%
+.Ellipse
+	position: absolute
+	right: 24px
+	top: 204px
+	z-index: 1
+.tellefone
+	top: 136px
+	right: 15px
+	position: absolute
+	z-index: 2
+.header > .flex
+	justify-content: space-between
+.header
+	position: relative
+	padding-top: 44px
+	margin: 0 auto
+	max-width: 1110px
+	width: 100%
+	background-image: url(../img/fon.png)
+	background-repeat: no-repeat
+	.flex__block
+		.widgets__text
+			font-size: 10.6px
+			line-height: 16px
+			margin-top: 13px
+		h1
+			margin-top: 75px
+			font-size: 39.9px
+			line-height: 49px
+			font-weight: 900
+			max-width: 606px
+		p
+			margin-top: 17px
+			font-size: 12px
+			line-height: 19px
+			font-weight: 500
+			max-width: 657px
+		.flex
+			margin-top: 24px
+			align-items: center
+			margin-bottom: 26px
+			p
+				margin-top: 0px
+				font-size: 16.5px
+				line-height: 20px
+				font-weight: 900
+				border-bottom: 1px solid $main
+			a
+				margin-right: 40px
+				max-width: 285px
+				height: 62px
+				border-radius: 25.5px
+		.widgets
+			display: flex
+			gap: 40px
+.zoon-widget-comments
+  height: 50px
+#frameId1628169072522
+    transform: scale(0.625)
+    transform-origin: 0 0
+.doing
+	margin-top: 58px
+	.flex
+		justify-content: space-between
+		.doing__text
+			p
+				font-size: 9.9px
+				line-height: 15px
+				max-width: 470px
+			h2
+				font-size: 22px
+				line-height: 27px
+				font-weight: 900
+				max-width: 420px
+				margin-bottom: 16px
+			.preview
+				font-size: 14.7px
+				line-height: 17px
+				margin-bottom: 16px
+		.doing__carts
+			margin-left: 20px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			gap: 29px
+			.doing__item-one
+				width: 144px
+				height: 118px
+				background-image: url(../img/rounded_rectangle_2_561.png)
+				background-repeat: no-repeat
+			.doing__item-two
+				width: 144px
+				height: 118px
+				background-image: url(../img/rounded_rectangle_2_603.png)
+				background-repeat: no-repeat
+			.doing__item-three
+				width: 144px
+				height: 118px
+				background-image: url(../img/rounded_rectangle_2_614.png)
+				background-repeat: no-repeat
+			p
+				margin-left: 10px
+				margin-top: 14px
+				margin-bottom: 2px
+				font-size: 8.9px
+				line-height: 10px
+				color: #ffffff
+			h2
+				margin-left: 10px
+				font-size: 28.9px
+				line-height: 38px
+				font-weight: bold
+				color: #ffffff
+			a
+				max-width: 144px
+				height: 31px
+				font-size: 9px
+				line-height: 12px
+				font-weight: 500
+				color: #ffffff
+				border-radius: 8px
+				margin-top: 24px
+.services
+	margin-top: 46px
+	.flex
+		gap: 63px
+		justify-content: space-between
+		.services__item
+			border-radius: 10px
+			background: $koga
+			position: relative
+			img
+				border-radius: 10px 10px 0px 0px
+			.services__item-title
+				top: 267px
+				position: absolute
+				display: flex
+				align-items: center
+				justify-content: center
+				font-size: 14px
+				line-height: 20px
+				background: $main
+				color: white
+				width: 152px
+				height: 35px
+				border-radius: 0px 10px 10px 0px
+			p
+				margin-top: 10px
+				font-size: 10px
+				line-height: 17px
+				padding: 14px
+			a
+				max-width: 258px
+				height: 44px
+				border-radius: 13.5px
+				margin-bottom: 13px
+				margin: 0 auto
+				font-size: 13.5px
+				line-height: 16px
+				font-weight: 900
+.tattooing
+	margin-top: 40px
+	.flex
+		margin-bottom: 17px
+		.tattooing__title
+			font-size: 40px
+			line-height: 27px
+			font-weight: 900
+		.drob
+			margin-left: 21px
+			margin-right: 21px
+			font-size: 56.1px
+			line-height: 28px
+			font-weight: 300
+		p
+			font-size: 14px
+			line-height: 18px
+	p
+		font-size: 14px
+		line-height: 18px
+	.flex__dop
+		margin-top: 26px
+		margin-bottom: 0px
+		.tattooing__block 
+			max-width: 282px
+			width: 100%
+			height: 118px
+			border-radius: 10px
+			background: $red
+			margin-right: 31px
+		p
+			max-width: 626px
+		span
+			color: $red
+.team
+	.container
+		position: relative
+.team 
+	margin: 0 auto
+	max-width: 1110px
+	width: 100%
+	margin-top: 60px
+	border-radius: 60px
+	background: $koga
+	padding-top: 50px
+	padding-bottom: 58px
+	margin-bottom: 65px
+	.team__one
+		position: absolute
+		z-index: 1
+		left: -20px
+		top: -25px
+	.team__two
+		position: absolute
+		right: -152px
+		top: -64px
+		z-index: 1
+	.flex
+		justify-content: space-between
+	h2
+		font-size: 40px
+		line-height: 27px
+		font-weight: 900
+		text-align: center
+		margin-bottom: 6px
+	p
+		opacity: 0.89
+		font-size: 12px
+		line-height: 19px
+		text-align: center
+		margin-bottom: 36px
+	.team__item-one
+		max-width: 410px
+		width: 100%
+		border-radius: 10px
+		background: $main
+		display: flex
+		align-items: flex-end
+		flex-direction: column
+		padding: 16px
+		padding-bottom: 22px
+		position: relative
+		p
+			font-size: 9.6px
+			line-height: 15px
+			color: #ffffff
+			margin-bottom: 27px
+		h3
+			font-size: 19.1px
+			line-height: 13px
+			font-weight: 900
+			color: #ffffff
+		.team__blocks
+			z-index: 2
+			gap: 13px
+			display: flex
+			flex-direction: column
+		.team__block
+			min-width: 144px
+			width: 100%
+			height: 54px
+			border-radius: 10px
+			background: white
+			padding-top: 8px
+			padding-left: 10px
+			padding-right: 17px
+			position: relative
+			p
+				text-align: left
+				margin-bottom: 0px
+				font-size: 8.9px
+				line-height: 10px
+				color: $main
+			.number
+				font-size: 28.9px
+				line-height: 30px
+				font-weight: bold
+				color: $main
+			a
+				margin-top: 0px
+				max-width: 60px
+				height: 18px
+				border-radius: 9px
+				position: absolute
+				right: 0
+				bottom: 0
+		a
+			margin-top: 60px
+			max-width: 258px
+			height: 44px
+			border-radius: 13.5px
+			z-index: 2
+	.team__item-two
+		max-width: 410px
+		width: 100%
+		border-radius: 10px
+		background: $main
+		display: flex
+		align-items: flex-start
+		flex-direction: column
+		padding: 16px
+		padding-bottom: 22px
+		position: relative
+		p
+			font-size: 9.6px
+			line-height: 15px
+			color: #ffffff
+			margin-bottom: 27px
+		h3
+			font-size: 19.1px
+			line-height: 13px
+			font-weight: 900
+			color: #ffffff
+		.team__blocks
+			z-index: 2
+			gap: 13px
+			display: flex
+			flex-direction: column
+		.team__block
+			min-width: 144px
+			width: 100%
+			height: 54px
+			border-radius: 10px
+			background: white
+			padding-top: 8px
+			padding-left: 10px
+			padding-right: 17px
+			position: relative
+			p
+				text-align: left
+				margin-bottom: 0px
+				font-size: 8.9px
+				line-height: 10px
+				color: $main
+			.number
+				font-size: 28.9px
+				line-height: 30px
+				font-weight: bold
+				color: $main
+			a
+				margin-top: 0px
+				max-width: 60px
+				height: 18px
+				border-radius: 9px
+				position: absolute
+				right: 0
+				bottom: 0
+		a
+			margin-top: 60px
+			max-width: 258px
+			height: 44px
+			border-radius: 13.5px
+			z-index: 2
+

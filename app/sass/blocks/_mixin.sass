@@ -1,0 +1,85 @@
+// * write "null" if you dont whant to output property
+	
+// transition
+=trs
+	transition: all .3s ease
+
+// flex container
+=flex($f-align, $f-horizontal, $f-vertical, $f-wrap)
+	display: flex
+
+	@if $f-align == row
+		flex-direction: row
+	@if $f-align == row-reverse
+		flex-direction: row-reverse
+	@if $f-align == column
+		flex-direction: column
+	@if $f-align == column-reverse
+		flex-direction: column-reverse
+
+	@if $f-horizontal == start
+		justify-content: flex-start
+	@if $f-horizontal == center
+		justify-content: center
+	@if $f-horizontal == end
+		justify-content: flex-end
+	@if $f-horizontal == between
+		justify-content: space-between
+	@if $f-horizontal == around
+		justify-content: space-around
+
+	@if $f-vertical == start
+		align-items: flex-start
+	@if $f-vertical == center
+		align-items: center
+	@if $f-vertical == end
+		align-items: flex-end
+	@if $f-vertical == stretch
+		align-items: stretch
+
+	@if $f-wrap == wrap
+		flex-wrap: wrap
+	@if $f-wrap == nowrap
+		flex-wrap: nowrap
+
+// change scrollbar
+=scrollbar($sb-width, $sb-height, $sb-color, $sb-bgcolor, $sb-hover, $sb-radius)
+	&::-webkit-scrollbar
+		width: $sb-width
+		height: $sb-height
+	&::-webkit-scrollbar-thumb
+		background: $sb-color
+		border-radius: $sb-radius
+		cursor: pointer
+	&::-webkit-scrollbar-track
+		background: $sb-bgcolor
+	&::-webkit-scrollbar-thumb:hover
+		background: $sb-hover
+
+// background
+=bg($bg-attachment, $bg-color, $bg-img, $bg-repeat, $bg-horizontal, $bg-vertical, $bg-size)
+	background: $bg-attachment $bg-color url('#{$img + $bg-img}') $bg-repeat $bg-horizontal $bg-vertical / $bg-size
+
+
+// triangle
+=triangle($direction, $size, $color)
+	content: ''
+	width: 0
+	height: 0
+	display: block
+	@if ($direction == 'up')
+		border-bottom: $size solid $color
+		border-left: 1/2*$size solid transparent
+		border-right: 1/2*$size solid transparent
+	@else if ($direction == 'down')
+		border-top: $size solid $color
+		border-left: 1/2*$size solid transparent
+		border-right: 1/2*$size solid transparent
+	@else if ($direction == 'left')
+		border-top: 1/2*$size solid transparent
+		border-bottom: 1/2*$size solid transparent
+		border-right: $size solid $color
+	@else if ($direction == 'right')
+		border-top: 1/2*$size solid transparent
+		border-bottom: 1/2*$size solid transparent
+		border-left: $size solid $color
