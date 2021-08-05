@@ -21,7 +21,184 @@ header
                 font-size: 16px
                 line-height: 20px
                 color: $main
+            .inst
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                display: inline-block
 .main-menu-btn-icon
     display: none
 #menu-bar
 	display: none
+.header__menu label
+    font-size: 20px
+    color: #333
+    cursor: pointer
+    display: none
+
+.main-menu-btn-icon,
+.main-menu-btn-icon:before,
+.main-menu-btn-icon:after
+    position: absolute
+    top: 32px
+    right: 165px
+    height: 4px
+    width: 30px
+    background: $main
+    -webkit-transition: all 0.25s
+    transition: all 0.25s
+.main-menu-btn-icon:before
+    content: ''
+    top: -10px
+    left: 0
+.main-menu-btn-icon:after
+    content: ''
+    top: 10px
+    left: 0
+#menu-bar:checked ~ .main-menu-btn-icon
+    height: 0
+    background: inherit
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+#menu-bar:checked ~ .main-menu-btn-icon:before
+    transform: rotate(-45deg)
+    top: 0
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+#menu-bar:checked ~ .main-menu-btn-icon:after
+    top: 0
+    transform: rotate(45deg)
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+.header__menu .navbar ul li .drop:after
+    content: ''
+    display: block
+    position: absolute
+    right: 0px
+    top: 42%
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 10px solid #333
+    border-bottom: 0px solid transparent
+.header__menu .navbar ul li ul li .drop:after
+    content: ''
+    display: block
+    position: absolute
+    right: 20px
+    top: 42%
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 10px solid #333
+    border-bottom: 0px solid transparent
+.header__menu .navbar ul li ul li:focus-within > .drop:after,
+.header__menu .navbar ul li ul li:active > .drop:after,
+.header__menu .navbar ul li ul li:target > .drop:after,
+.header__menu .navbar ul li ul li:hover > .drop:after
+    content: ''
+    display: block
+    position: absolute
+    right: 20px
+    top: 42%
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 10px solid white
+    border-bottom: 0px solid transparent
+
+@media(max-width: 834px)
+	.header__menu label
+        display: initial
+	.header__menu .navbar
+        max-width: 20%
+        border-radius: 0 20px 20px 0
+        max-height: 650px
+        overflow: auto
+        position: absolute
+        top: 13%
+        left: 0
+        right: 0
+        background: white
+        border-top: 1px solid rgba(0,0,0,.1)
+        display: none
+	.header__menu .navbar ul li
+        width: 100%
+	.header__menu .navbar ul li ul
+        position: relative
+        width: 100%
+	.header__menu .navbar ul li ul li
+        background: white
+	.header__menu .navbar ul li ul li a
+        padding-left: 45px
+	.header__menu .navbar ul li ul li:before
+        content: ''
+        display: block
+        position: absolute
+        width: 15px
+        height: 2.5px
+        left: 20px
+        top: 50%
+        background: #333
+	.header__menu .navbar ul li ul li ul
+        width: 100%
+        left: 0
+	#menu-bar:checked ~ .navbar
+        display: initial
+	.header__menu .navbar ul li .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 33%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid #333
+        border-bottom: 0px solid transparent
+	.header__menu .navbar ul li ul li .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 33%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid #333
+        border-bottom: 0px solid transparent
+	.header__menu .navbar ul li:focus-within > .drop:after,
+	.header__menu .navbar ul li:active > .drop:after,
+	.header__menu .navbar ul li:target > .drop:after,
+	.header__menu .navbar ul li:hover > .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 13%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid white
+        border-bottom: 0px solid transparent
+	.header__menu .navbar ul li ul li:focus-within > .drop:after,
+	.header__menu .navbar ul li ul li:active > .drop:after,
+	.header__menu .navbar ul li ul li:target > .drop:after,
+	.header__menu .navbar ul li ul li:hover > .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 10%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid white
+        border-bottom: 0px solid transparent
