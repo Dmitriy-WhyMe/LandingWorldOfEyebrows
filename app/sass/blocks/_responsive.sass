@@ -28,7 +28,7 @@
         top: 550px
         max-height: 550px
     .work .swiper-slide
-        margin: 0 8px
+        margin: 0 7px
     .rewiev .flex > img
         display: none
     .rewiev .flex
@@ -52,6 +52,11 @@
     .navbar ul
         flex-direction: column
         padding: 15px
+@include max-screen(834px)
+    .work .swiper-slide
+        margin: 0 11px
+    .header .link
+        display: none
 @include max-screen(767px)
     footer .footer__item .flex .flex__block
         flex-direction: column
@@ -68,12 +73,6 @@
         width: 100%
     .item__cont
         width: 100%
-    .team .team__two
-        right: -94px
-        top: 93px
-    .team .team__one
-        left: -98px
-        top: 615px
     .work .swiper-slide
         margin: 0 13px
     .tattooing .flex
@@ -111,6 +110,43 @@
         margin-left: 0px
     .header__menu .navbar
         max-width: 30%
+@include max-screen(744px)    
+    .work .swiper-slide
+        margin: 0 7px
+@include max-screen(666px) 
+    .work .swiper-slide
+        margin: 0 32px
+    .team .team__two
+        right: 11px
+        top: 47px
+    .team .team__one
+        left: 0px
+        top: 569px
+    .work
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+@include max-screen(600px) 
+    .work .swiper-slide
+        margin: 0 43px
+@include max-screen(550px) 
+    .work .swiper-slide
+        margin: 0 35px
+@include max-screen(500px)
+    .work .swiper-slide
+        margin: 0 25px
+    .team .team__two
+        right: -94px
+        top: 93px
+    .team .team__one
+        left: -98px
+        top: 615px
+@include max-screen(450px)
+    margin: 0 17px
+@include max-screen(414px)
+    .work .swiper-slide
+        margin: 0 10px
 @include max-screen(413px)
     .header .flex__block h1
         font-size: 30px
@@ -131,6 +167,9 @@
     .contact .contact__item .flex a .txt
         text-align: center
 @include max-screen(374px)
+    .work
+        padding-left: 50px
+        padding-right: 50px
     .header__menu .navbar
         max-width: 35%
     .work .swiper-slide
