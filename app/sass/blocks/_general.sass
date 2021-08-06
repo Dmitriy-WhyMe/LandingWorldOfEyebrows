@@ -57,7 +57,7 @@ body
 	justify-content: space-between
 .header
 	position: relative
-	padding-top: 44px
+	padding-top: 35px
 	margin: 0 auto
 	max-width: 1110px
 	width: 100%
@@ -69,11 +69,26 @@ body
 		top: 141px
 		border-radius: 18px
 		z-index: 10
+	.link
+		width: 38px
+		height: 38px
+		background: $red
+		box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.55)
+		position: absolute
+		border-radius: 50%
+		right: 173px
+		top: 395px
+		z-index: 20
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
 	.flex__block
 		.widgets__text
 			font-size: 10.6px
 			line-height: 16px
 			margin-top: 13px
+			padding-bottom: 9px
 		h1
 			margin-top: 75px
 			font-size: 39.9px
@@ -96,7 +111,10 @@ body
 				line-height: 20px
 				font-weight: 900
 				border-bottom: 1px solid $main
+				border-bottom-style: dotted
 			a
+				font-weight: 900px
+				font-size: 16px
 				margin-right: 40px
 				max-width: 285px
 				height: 62px
@@ -123,11 +141,11 @@ body
 				line-height: 27px
 				font-weight: 900
 				max-width: 420px
-				margin-bottom: 16px
+				margin-bottom: 10px
 			.preview
 				font-size: 14.7px
 				line-height: 17px
-				margin-bottom: 16px
+				margin-bottom: 10px
 		.doing__carts
 			margin-left: 20px
 			display: flex
@@ -200,6 +218,7 @@ body
 				font-size: 10px
 				line-height: 17px
 				padding: 14px
+				text-align: justify
 			a
 				max-width: 258px
 				height: 44px
@@ -260,8 +279,8 @@ body
 	.team__one
 		position: absolute
 		z-index: 1
-		left: -20px
-		top: -25px
+		left: -156px
+		top: -78px
 	.team__two
 		position: absolute
 		right: -152px
@@ -336,6 +355,7 @@ body
 				position: absolute
 				right: 0
 				bottom: 0
+				font-size: 10px
 		a
 			margin-top: 60px
 			max-width: 258px
@@ -397,6 +417,7 @@ body
 				position: absolute
 				right: 0
 				bottom: 0
+				font-size: 10px
 		a
 			margin-top: 60px
 			max-width: 258px
@@ -437,11 +458,15 @@ body
 			line-height: 12px
 			font-weight: 500
 			margin-bottom: 5px
+			span
+				font-weight: 700
 		a
 			margin: 0 auto
 			max-width: 185px
 			height: 32px
 			border-radius: 13.5px
+			font-size: 14px
+    		font-weight: 700
 .rewiev
 	margin-top: 50px
 	margin-bottom: 45px

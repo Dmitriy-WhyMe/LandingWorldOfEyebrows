@@ -23,4 +23,13 @@
 			},
 		});
 	});
+	$('.link').click(function(){
+		var volume = $(this);
+		volume.toggleClass('on');
+		if (volume.is('.on')) $('#video').prop("volume", 1);
+		else $('#video').prop("volume", 0);
+	});
+	document.getElementById("video").oncontextmenu = function (e) {
+		return false;
+	};
 })(jQuery);
